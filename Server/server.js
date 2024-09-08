@@ -27,6 +27,11 @@ const homeSizes = {
     XXL: 300,
 };
 
+app.get('/wake-up', (req, res) => {
+    res.send('Server is awake!');
+  });
+
+
 app.get('/api/services/questions', async (req, res) => {
     const { homeSize, service } = req.query;
     const decodedService = decodeURIComponent(service).replace(/_/g, ' ');

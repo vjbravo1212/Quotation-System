@@ -18,7 +18,7 @@ const TotalQuotation = () => {
       }
 
       try {
-        const response = await fetch('http://localhost:5000/api/getTotalQuotation', {
+        const response = await fetch('https://quotation-system.onrender.com/api/getTotalQuotation', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

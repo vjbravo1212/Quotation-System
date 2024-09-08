@@ -19,7 +19,7 @@ const FormContent = ({ onBack, onNext, selectedServices }) => {
       return;
     }
 
-    // Call the onNext handler and pass the homeSize and selectedServices for the next component
+    
     onNext({ homeSize, selectedServices, source });
   };
 

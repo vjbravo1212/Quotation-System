@@ -37,7 +37,7 @@ const Modal = ({ isOpen, onClose, services }) => {
         .join(',');
       const encodedServiceNames = encodeURIComponent(selectedServiceNames);
 
-      const response = await fetch(`http://localhost:5000/api/services/questions?homeSize=${data.homeSize}&service=${encodedServiceNames}`, {
+      const response = await fetch(`https://quotation-system.onrender.com/api/services/questions?homeSize=${data.homeSize}&service=${encodedServiceNames}`, {
         method: 'GET',
       });
 

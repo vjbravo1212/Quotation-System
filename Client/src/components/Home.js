@@ -8,7 +8,7 @@ const Home = () => {
 
   const openModal = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/services');
+      const response = await fetch('https://quotation-system.onrender.com/api/services');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
